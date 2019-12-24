@@ -1,1 +1,66 @@
-header.header
+- 
+  let mainMenu = [
+    {
+      title: 'О компании',
+      link: '#'
+    },
+    {
+      title: 'Услуги',
+      link: '#'
+    },
+    {
+      title: 'Акции и скидки',
+      link: '#'
+    },
+    {
+      title: 'Полезная информация',
+      link: '#'
+    },
+    {
+      title: 'Новости',
+      link: '#'
+    },
+    {
+      title: 'Контакты',
+      link: '#'
+    },
+    {
+      title: 'Проверка заказа',
+      link: '#'
+    },
+  ]
+
+header.b-header
+  ._top-line
+    .wrapper
+      .b-logo._logo
+        img(src="/images/general/logo.png", alt="Теплохаус — инженерная сантехника")._img
+      .b-search._search
+        input(type="search", name="header-search" placeholder="Поиск по артикулу или названию")._input
+        button._bpn
+          +icon('search', 'search__icon')
+      ._phone-block
+        p Телефон
+        a(href="tel:+74832312331", title="Телефон 8 4832 31-23-31")._phone 8 4832 31-23-31
+      ._meta
+        +icon('user', 'header__meta-icon')
+        p._meta-title Личный кабинет
+      ._meta
+        +icon('cart', 'header__meta-icon')
+        p._meta-title 
+          | Корзина (
+          span 0
+          | )
+  ._second-line
+    .wrapper
+      nav.b-catalog-nav
+        ul._items
+          li._item.-current
+            span._link Каталог
+          li._item
+            a(href="#", title="Производители")._link Производители
+      nav.b-main-menu
+        ul._items
+          each item in mainMenu
+            li._item
+              a(href=item.link, title=item.title)._link= item.title
