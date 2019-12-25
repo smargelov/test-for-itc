@@ -31,17 +31,17 @@
   ]
 
 header.b-header
-  ._top-line
-    .wrapper
-      .b-logo._logo
+  .wrapper
+    ._top-line
+      a(href="/", title="Главная").b-logo._logo
         img(src="/images/general/logo.png", alt="Теплохаус — инженерная сантехника")._img
       .b-search._search
         input(type="search", name="header-search" placeholder="Поиск по артикулу или названию")._input
-        button._bpn
+        button._btn
           +icon('search', 'search__icon')
       ._phone-block
         p Телефон
-        a(href="tel:+74832312331", title="Телефон 8 4832 31-23-31")._phone 8 4832 31-23-31
+        a(href="tel:+74832312331", title="Телефон 8 4832 31-23-31")._phone 8 4832 31-23-31
       ._meta
         +icon('user', 'header__meta-icon')
         p._meta-title Личный кабинет
@@ -51,16 +51,17 @@ header.b-header
           | Корзина (
           span 0
           | )
-  ._second-line
+  ._full-w-wrap
     .wrapper
-      nav.b-catalog-nav
-        ul._items
-          li._item.-current
-            span._link Каталог
-          li._item
-            a(href="#", title="Производители")._link Производители
-      nav.b-main-menu
-        ul._items
-          each item in mainMenu
+      ._second-line
+        nav.b-catalog-nav
+          ul._items
+            li._item.-current
+              span._link Каталог
             li._item
-              a(href=item.link, title=item.title)._link= item.title
+              a(href="#", title="Производители")._link Производители
+        nav.b-main-nav
+          ul._items
+            each item in mainMenu
+              li._item
+                a(href=item.link, title=item.title)._link= item.title

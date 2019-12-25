@@ -6,13 +6,15 @@
 
 html 
   font-size: $base-font-size
+  font-family: $main-font
+  color: $text-color
   height: 100%
 
 body 
   min-height: 100vh
   scroll-behavior: smooth
   text-rendering: optimizeSpeed
-  line-height: 1.5
+  line-height: 22px
 
 *,
 *::before,
@@ -52,6 +54,20 @@ button,
 textarea,
 select 
   font: inherit
+
+input:not([type="submit"])
+  height: 50px
+  background-color: $input-bg-color
+  border: 1px solid $thin-line-color
+  padding-right: 50px
+  padding-left: 15px
+  border-radius: 3px
+  line-height: 48px
+  font-size: 1rem
+  &:hover, &:focus 
+    background-color: $white
+  &:focus
+    border: 1px solid #64a8d1
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) 
