@@ -2,5 +2,13 @@ extends template/main
 
 block variables
 	- var title = 'Главная страница'
+	include modules/index/data
 
 block content
+	.wrapper
+		main.main
+			include modules/index/store
+			include modules/index/seo
+			include modules/index/contacts
+		aside.sidebar
+			include modules/index/sidebar
