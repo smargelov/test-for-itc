@@ -1,0 +1,6 @@
+section.b-contacts-block
+	each card in contacts
+		._card
+			h4.h4._title= card.title
+			p._text= card.text
+			a(href= card.link, title=card.btn).btn.btn--success._btn= card.btn 
