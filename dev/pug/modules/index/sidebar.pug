@@ -1,0 +1,28 @@
+aside.b-sidebar
+	.b-widget._widget
+		h3.h3._title Подбор по параметрам
+		._content
+			form.b-param-form
+				._brand
+					h4.h4._title 
+						span
+							+icon('pag-arrow', 'param-form__arrow')
+						| Марка
+					._inputs
+						each brand in ['Ariston', 'Baxi', 'Protherm', 'Лемакс']
+							label._label
+								input(type="checkbox", name= brand)._input
+								._desc= brand
+				._price-range
+					h4.h4._title
+						span
+							+icon('pag-arrow', 'param-form__arrow')
+						| Цена
+						._price-inputs
+							label._lable От
+								input(type="text", name='low' value='3400')
+							p —
+							label._lable До
+								input(type="text", name='highs' value='40000')
+						._line
+				button(type="reset") × Сбросить параметры
