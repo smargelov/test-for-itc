@@ -1,0 +1,94 @@
+.sidebar
+	order: 1
+	margin-right: 30px
+	padding-top: 30px
+	max-width: 315px
+.widget
+	padding-top: 10px
+	padding-bottom: 14px
+	&__title
+		font-size: 17px
+		line-height: 26px
+		text-transform: uppercase
+		margin-bottom: 43px
+
+.param-form
+	&__title
+		font-size: 17px
+		line-height: 24px
+		margin-bottom: 14px
+	&__arrow
+		height: 8px
+		width: 5px
+		transform: rotate(90deg)
+		margin-right: 9px
+	&__brand
+		font-family: $second-font
+		margin-bottom: 24px
+	&__label
+		&:hover, &:focus
+			div
+				color: $title-color
+				&::before
+					border: 1px solid $blue
+	&__checkbox
+		position: absolute
+		z-index: -1
+		opacity: 0
+		&:checked + div::after
+			content: ''
+			position: absolute
+			width: 12px
+			height: 8px
+			background-image: url(../images/general/tick.svg)
+			background-repeat: no-repeat
+			background-size: cover
+			display: block
+			top: 5px
+			left: 19px
+	&__desc
+		position: relative
+		padding-left: 40px
+		cursor: pointer
+		&::before
+			content: ''
+			position: absolute
+			width: 14px
+			height: 14px
+			border-radius: 3px
+			border: 1px solid $thin-line-color
+			background-color: $white
+			left: 16px
+			top: 2px
+			transition: all 0.3s ease
+	&__price-inputs
+		display: flex
+		justify-content: space-between
+		align-items: flex-end
+		label 
+			max-width: 45%
+			position: relative
+			&::after
+				content: '₽'
+				position: absolute
+				right: 0
+				bottom: 0
+				width: 50px
+				height: 50px
+				display: flex
+				align-items: center
+				justify-content: center
+				font-family: $third-font
+
+			input
+				max-width: 100%
+				color: $text-color
+			span
+				margin-left: 15px
+		p 
+			line-height: 50px
+	&__btn
+		width: 100%
+		margin-top: 32px
+		
+	

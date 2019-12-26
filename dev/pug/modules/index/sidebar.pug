@@ -6,23 +6,25 @@ aside.b-sidebar
 				._brand
 					h4.h4._title 
 						span
-							+icon('pag-arrow', 'param-form__arrow')
+							+icon('arrow', 'param-form__arrow')
 						| Марка
 					._inputs
 						each brand in ['Ariston', 'Baxi', 'Protherm', 'Лемакс']
 							label._label
-								input(type="checkbox", name= brand)._input
+								input(type="checkbox", name= brand)._checkbox
 								._desc= brand
 				._price-range
 					h4.h4._title
 						span
-							+icon('pag-arrow', 'param-form__arrow')
+							+icon('arrow', 'param-form__arrow')
 						| Цена
-						._price-inputs
-							label._lable От
-								input(type="text", name='low' value='3400')
-							p —
-							label._lable До
-								input(type="text", name='highs' value='40000')
-						._line
-				button(type="reset") × Сбросить параметры
+					._price-inputs
+						label._lable
+							span От
+							input(type="text", name='low' value='3400')
+						p —
+						label._lable
+							span До
+							input(type="text", name='highs' value='40000')
+					._line
+				button(type="reset").btn.btn--clear._btn × Сбросить параметры
