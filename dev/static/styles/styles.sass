@@ -42,6 +42,19 @@ dl,
 dd
   margin: 0
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6
+  font-family: $title-font
+  font-weight: bold
+
+.h2
+  font-size: 30px
+  line-height: 40px
+
 a:not([class]) 
   text-decoration-skip-ink: auto
 
@@ -103,6 +116,22 @@ button
 .content 
   flex: 1 0 auto
 
+.btn
+  border-radius: 3px
+  height: 50px
+  font-size: 12px
+  font-family: $title-font
+  text-transform: uppercase
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: all .5s ease
+  &--success
+    background-color: $blue
+    text-decoration: none
+    color:  $white
+    &:hover, &:focus
+      background-color: $blue-hover
 
 //Модули
 @import 'modules/modules'

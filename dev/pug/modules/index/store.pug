@@ -20,37 +20,38 @@ section.b-store
 					img(src=item.img, alt=item.title)
 				h3.h3._title
 					a(href=item.link, title=item.title)._link= item.title
-					if	item.onStock
-						._on-stock
-							+icon('tick', 'product-card__on-stock-icon')
-							p в наличии
-					else
-						._on-stock.-delivery
-							+icon('wheel', 'product-card__delivery-icon')
-							p 
-								| под заказ 
-								span= item.deliveryDay
-								|  дней
+				if	item.onStock
+					._on-stock
+						+icon('tick', 'product-card__on-stock-icon')
+						p в наличии
+				else
+					._on-stock.-delivery
+						+icon('wheel', 'product-card__delivery-icon')
+						p 
+							| под заказ 
+							span= item.deliveryDay
+							|  дней
+				._price-box
 					._price
-							span=item.price
-							|  ₽
-							if item.oldPrice && item.oldPrice > item.price
-								._old-price= item.oldPrice
-					btn.btn.-success._btn(data-product= item.id)
+						span=item.price
+						|  ₽
+						if item.oldPrice && item.oldPrice > item.price
+							._old-price= item.oldPrice
+					btn.btn.btn--success._btn(data-product= item.id)
 						+icon('lil__cart', 'product-card__btn-icon')
-					if item.sale
-						._sale
-							span= item.salePercent
-							|  %
+				if item.sale
+					._sale
+						span= item.salePercent
+						|  %
 	._footer
 		.b-pagination._pagination
 			._arrow.-disable.-left
 				+icon('pag-arrow', 'pagination__icon')
 			._num.-current 1
-			._num 2
-			._num 3
+			a(href="#", title="2")._num 2
+			a(href="#", title="3")._num 3
 			._dot ...
-			._num 10
-			._arrow
+			a(href="#", title="10")._num 10
+			a(href="#", title="Last")._arrow
 				+icon('pag-arrow', 'pagination__icon')
 

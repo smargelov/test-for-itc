@@ -1,0 +1,36 @@
+.catalog-nav
+	&__items
+		display: flex
+	&__item 
+		width: 157px
+		background-color: #0e8c59
+		text-align: center
+		&--current
+			background-color: $accent-color
+	&__link
+		text-transform: uppercase
+		text-decoration: none
+		color: $white
+		font-size: 15px
+		line-height: 50px
+		font-family: $title-font
+		font-weight: bold
+
+.main-nav
+	flex-grow: 1
+	margin-left: 30px
+	&__items
+		display: flex
+		justify-content: space-between
+	&__item 
+		text-align: center
+	&__link
+		text-transform: uppercase
+		text-decoration: none
+		font-size: 15px
+		line-height: 50px
+		font-family: $title-font
+		color: $text-color
+		font-weight: bold
+		&:hover, &:focus
+			color: $orange
