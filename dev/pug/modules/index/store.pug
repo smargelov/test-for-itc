@@ -4,14 +4,18 @@ section.b-store
 		._sort
 			._header-title Показать сначала:
 			._vars
-				each variable in ['дорогие', 'дешёвые', 'популярные']
-					._var= variable
+				each variable in ['дорогие', 'популярные']
+					._var
+						| #{variable}
+						+icon('pag-arrow', 'store__header-arrow')
 			._arrow
 		._order
 			._header-title Выводить по:
 			._vars
-				each variable in [8, 16, 24, 32]
-					._var= variable
+				each variable in [8]
+					._var
+						| #{variable}
+						+icon('pag-arrow', 'store__header-arrow')
 			._arrow
 	._items
 		each item in storeList
