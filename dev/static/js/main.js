@@ -1,5 +1,37 @@
 $(document).ready(function () {
     svg4everybody({});
+
+    // Number formatting
+    function formatNumber(num) {
+        return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ')
+    }
+    function changeFormattingNum(targetNum) {
+        $.each(targetNum, function (index, value) {
+            let num = $(value).text();
+            $(value).text(formatNumber(num))
+        });
+    }
+    function changeFormattingNumInput(targetInput) {
+        $.each(targetInput, function (index, value) {
+            let num = $(value).val();
+            $(value).val(formatNumber(num))
+        });
+    }
+    changeFormattingNum($('.product-card__price > span'));
+    changeFormattingNum($('.product-card__old-price'));
+    changeFormattingNumInput($('.param-form__lable > input'));
+
+
+    var slider = document.getElementById('price-slider');
+
+    noUiSlider.create(slider, {
+        start: [20, 80],
+        connect: true,
+        range: {
+            'min': 0,
+            'max': 100
+        }
+    });
 });
 
 
