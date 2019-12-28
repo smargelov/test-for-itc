@@ -42,15 +42,16 @@ header.b-header
       ._phone-block
         p Телефон
         a(href="tel:+74832312331", title="Телефон 8 4832 31-23-31")._phone 8 4832 31-23-31
-      a(href="#", title="Личный кабинет")._meta
-        +icon('user', 'header__meta-icon')
-        p._meta-title Личный кабинет
-      a(href="#", title="Корзина")._meta
-        +icon('cart', 'header__meta-icon')
-        p._meta-title 
-          | Корзина (
-          span 0
-          | )
+      ._meta-block
+        a(href="#", title="Личный кабинет")._meta
+          +icon('user', 'header__meta-icon')
+          p._meta-title Личный кабинет
+        a(href="#", title="Корзина")._meta
+          +icon('cart', 'header__meta-icon')
+          p._meta-title 
+            | Корзина (
+            span 0
+            | )
   ._full-w-wrap
     .wrapper
       ._second-line
