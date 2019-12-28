@@ -1,8 +1,355 @@
 {
-  "posts": [
-    {
-      "id": 500,
-      "title": "Какой-то текст"
-    }
-  ]
+  "storeList": [{
+    "id": 501,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 502,
+    "title": "Котел стальной Патриот 12,5 без дымохода с принудительной вентиляцией",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3990,
+    "sale": true,
+    "salePercent": -30,
+    "oldPrice": 5490,
+    "img": "/images/content/item2.jpg",
+    "link": "#"
+  }, {
+    "id": 503,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3400,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item3.jpg",
+    "link": "#"
+  }, {
+    "id": 504,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 505,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 506,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": false,
+    "deliveryDay": 5,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 507,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3400,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item3.jpg",
+    "link": "#"
+  }, {
+    "id": 508,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3990,
+    "sale": true,
+    "salePercent": -30,
+    "oldPrice": 5490,
+    "img": "/images/content/item2.jpg",
+    "link": "#"
+  }, {
+    "id": 509,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 510,
+    "title": "Котел стальной Патриот 12,5 без дымохода с принудительной вентиляцией",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3990,
+    "sale": true,
+    "salePercent": -30,
+    "oldPrice": 5490,
+    "img": "/images/content/item2.jpg",
+    "link": "#"
+  }, {
+    "id": 511,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3400,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item3.jpg",
+    "link": "#"
+  }, {
+    "id": 512,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 513,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 514,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": false,
+    "deliveryDay": 5,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 515,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3400,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item3.jpg",
+    "link": "#"
+  }, {
+    "id": 516,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3990,
+    "sale": true,
+    "salePercent": -30,
+    "oldPrice": 5490,
+    "img": "/images/content/item2.jpg",
+    "link": "#"
+  }, {
+    "id": 517,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 518,
+    "title": "Котел стальной Патриот 12,5 без дымохода с принудительной вентиляцией",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3990,
+    "sale": true,
+    "salePercent": -30,
+    "oldPrice": 5490,
+    "img": "/images/content/item2.jpg",
+    "link": "#"
+  }, {
+    "id": 519,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3400,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item3.jpg",
+    "link": "#"
+  }, {
+    "id": 520,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 521,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 522,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": false,
+    "deliveryDay": 5,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 523,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3400,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item3.jpg",
+    "link": "#"
+  }, {
+    "id": 524,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3990,
+    "sale": true,
+    "salePercent": -30,
+    "oldPrice": 5490,
+    "img": "/images/content/item2.jpg",
+    "link": "#"
+  }, {
+    "id": 525,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 526,
+    "title": "Котел стальной Патриот 12,5 без дымохода с принудительной вентиляцией",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3990,
+    "sale": true,
+    "salePercent": -30,
+    "oldPrice": 5490,
+    "img": "/images/content/item2.jpg",
+    "link": "#"
+  }, {
+    "id": 527,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3400,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item3.jpg",
+    "link": "#"
+  }, {
+    "id": 528,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 529,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 5990,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 530,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": false,
+    "deliveryDay": 5,
+    "price": 6300,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item1.jpg",
+    "link": "#"
+  }, {
+    "id": 531,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 3400,
+    "sale": false,
+    "salePercent": 0,
+    "oldPrice": 0,
+    "img": "/images/content/item3.jpg",
+    "link": "#"
+  }, {
+    "id": 532,
+    "title": "Котел стальной Патриот 12,5 без дымохода",
+    "onStock": true,
+    "deliveryDay": 0,
+    "price": 8900,
+    "sale": true,
+    "salePercent": -30,
+    "oldPrice": 5490,
+    "img": "/images/content/item2.jpg",
+    "link": "#"
+  }]
 }
