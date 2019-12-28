@@ -22,17 +22,45 @@ $(document).ready(function () {
     changeFormattingNumInput($('.param-form__lable > input'));
 
 
-    var slider = document.getElementById('price-slider');
+    // Price slider
 
+    let slider = document.getElementById('price-slider'),
+        priceMin = document.getElementById('price-min'),
+        priceMax = document.getElementById('price-max'),
+        prices = [5990, 3990, 3400, 5990, 5990, 5990, 3400, 3990], // получить из базы
+        maxRange = prices.reduce((a,b) => a > b ? a : b),
+        minRange = prices.reduce((a,b) => a < b ? a : b);
+    
     noUiSlider.create(slider, {
-        start: [20, 80],
+        start: [minRange, maxRange],
         connect: true,
+        step: 10,
         range: {
-            'min': 0,
-            'max': 100
+            'min': minRange,
+            'max': maxRange
         }
     });
+
+    slider.noUiSlider.on('update', (values, handle) => {
+        let value = values[handle];
+        if (!handle) {
+            priceMin.value = Math.round(value);
+        } else {
+            priceMax.value = Math.round(value);
+        }
+    });
+
+    priceMin.addEventListener('change', () => {
+        slider.noUiSlider.set([this.value, null]);
+    });
+    priceMax.addEventListener('change', () => {
+        slider.noUiSlider.set([null, this.value]);
+    });
 });
+console.log(
+    
+    [4,5,30,21,112,0,114,99,15,5,6].reduce((a,b) => a > b ? a : b)
+);
 
 
 // Полифилы
