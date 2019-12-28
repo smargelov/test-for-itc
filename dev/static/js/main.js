@@ -2,29 +2,22 @@ $(document).ready(function () {
     svg4everybody({});
 
     // Number formatting
-    function formatNumber(num) {
+    let formatNumber = (num) => {
         return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1 ')
     }
-    function changeFormattingNum(targetNum) {
-        $.each(targetNum, function (index, value) {
+    let changeFormattingNum = (targetNum) => {
+        $.each(targetNum, (index, value) => {
             let num = $(value).text();
             $(value).text(formatNumber(num))
         });
     }
-    function changeFormattingNumInput(targetInput) {
-        $.each(targetInput, function (index, value) {
-            let num = $(value).val();
-            $(value).val(formatNumber(num))
-        });
-    }
     changeFormattingNum($('.product-card__price > span'));
     changeFormattingNum($('.product-card__old-price'));
-    changeFormattingNumInput($('.param-form__lable > input'));
 
 
     // Price slider
 
-    let slider = document.getElementById('price-slider'),
+    const slider = document.getElementById('price-slider'),
         priceMin = document.getElementById('price-min'),
         priceMax = document.getElementById('price-max'),
         prices = [5990, 3990, 3400, 5990, 5990, 5990, 3400, 3990], // получить из базы
@@ -44,16 +37,16 @@ $(document).ready(function () {
     slider.noUiSlider.on('update', (values, handle) => {
         let value = values[handle];
         if (!handle) {
-            priceMin.value = Math.round(value);
+            priceMin.value = formatNumber(Math.round(value));
         } else {
-            priceMax.value = Math.round(value);
+            priceMax.value = formatNumber(Math.round(value));
         }
     });
 
-    priceMin.addEventListener('change', () => {
+    priceMin.addEventListener('change', function () {
         slider.noUiSlider.set([this.value, null]);
     });
-    priceMax.addEventListener('change', () => {
+    priceMax.addEventListener('change', function () {
         slider.noUiSlider.set([null, this.value]);
     });
 });
