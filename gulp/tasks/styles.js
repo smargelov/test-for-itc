@@ -46,4 +46,11 @@ module.exports = function () {
             .pipe(rename('styles.min.css'))
             .pipe($.gulp.dest(stylesPATH.output))
     });
+    $.gulp.task('styles:lib', () => {
+        return $.gulp.src(stylesPATH.input + 'libs.sass')
+            .pipe(sass())
+            .pipe(csso())
+            .pipe(rename('libs.min.css'))
+            .pipe($.gulp.dest(stylesPATH.output))
+    });
 };
