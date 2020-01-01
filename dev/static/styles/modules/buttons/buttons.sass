@@ -1,0 +1,23 @@
+.btn
+  border-radius: 3px
+  height: 50px
+  font-size: 15px
+  font-family: $title-font
+  text-transform: uppercase
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: background-color .5s ease
+  transition: border-width .5s ease
+  border: none
+  cursor: pointer
+  &--success
+    background-color: $blue
+    text-decoration: none
+    color:  $white
+    &:hover, &:focus
+      background-color: $blue-hover
+  &--clear
+    background-color: $input-bg-color
+    &:hover, &:focus
+      border: 1px solid $thin-line-color

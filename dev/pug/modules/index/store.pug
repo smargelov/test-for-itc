@@ -36,12 +36,12 @@ section.b-store
 							span= item.deliveryDay
 							|  дней
 				._price-box
-					._price
+					._price(data-price=item.price)
 						span=item.price
 						|  ₽
 						if item.oldPrice && item.oldPrice > item.price
 							._old-price= item.oldPrice
-					btn.btn.btn--success._btn(data-product= item.id)
+					button.btn.btn--success._btn(data-product= item.id)
 						+icon('lil__cart', 'product-card__btn-icon')
 				if item.sale
 					._sale
