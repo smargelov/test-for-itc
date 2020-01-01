@@ -1,3 +1,4 @@
+@import 'utils/libs'
 @import 'utils/vars'
 @import 'utils/grid'
 @import 'utils/mixins'
@@ -89,6 +90,7 @@ input:not([type="submit"])
   &:focus
     border: 1px solid #64a8d1
 
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) 
   * 
     animation-duration: 0.01ms !important
@@ -111,11 +113,41 @@ textarea
 section 
   position: relative
 
+// input,
+// select,
+// button 
+//   outline: none
+
 .wrapper 
   +wrapper()
 
 .content 
   flex: 1 0 auto
+
+.btn
+  border-radius: 3px
+  height: 50px
+  font-size: 15px
+  font-family: $title-font
+  text-transform: uppercase
+  display: flex
+  align-items: center
+  justify-content: center
+  transition: background-color .5s ease
+  transition: border-width .5s ease
+  border: none
+  cursor: pointer
+  &--success
+    background-color: $blue
+    text-decoration: none
+    color:  $white
+    &:hover, &:focus
+      background-color: $blue-hover
+  &--clear
+    background-color: $input-bg-color
+    &:hover, &:focus
+      border: 1px solid $thin-line-color
+
 
 //Модули
 @import 'modules/modules'
